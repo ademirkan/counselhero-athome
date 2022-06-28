@@ -1,0 +1,30 @@
+.userCard {
+  /* Sizing */
+  height: 190px;
+  width: 220px;
+
+  /* Styling */
+  background: #ffffff;
+  border: 0.5px solid rgba(217, 217, 217, 0.07);
+  box-shadow: 0px 5px 10px rgba(134, 134, 134, 0.25);
+  border-radius: 20px;
+  transform: scale(1);
+  transition: 0.1s linear;
+  user-select: none;
+
+  /* Contents */
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: 3fr auto 1fr;
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+/* Hover animations */
+.userCard:hover {
+  box-shadow: 0px 6px 12px rgba(134, 134, 134, 0.275);
+  transform: scale(1.025);
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+.imageCard {
+  /* Sizing */
+  height: 165px;
+  width: 215px;
+
+  /* Styling */
+  border-radius: 10px;
+  user-select: none;
+  background-position: center;
+  background-size: 100% 100%;
+  transition: background-image 100ms ease;
+
+  /* Title Positioning */
+  display: flex;
+  align-items: flex-end;
+}
+
+.backgroundCard {
+  /* Sizing */
+  height: 165px;
+  width: 215px;
+
+  /* Styling */
+  border-radius: 10px;
+  filter: drop-shadow(0px 5px 10px rgba(147, 147, 147, 0.25));
+
+  /* Background image */
+  background-position: center;
+  background-size: 100% 100%;
+  transition: background-image 0ms;
+
+  /* Misc */
+  user-select: none;
+}
+
+.title {
+  /* Sizing */
+  width: 100%;
+
+  /* Styling */
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: white;
+  font-size: smaller;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  text-align: center;
+}

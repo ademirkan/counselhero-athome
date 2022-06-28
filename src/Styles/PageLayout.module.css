@@ -1,0 +1,11 @@
+h1 {
+  grid-area: navbar;
+
+  /* Text settings */
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  color: #414141;
+}

@@ -1,0 +1,33 @@
+/* App layout container */
+.App {
+  display: grid;
+  grid-template-areas:
+    "navbar"
+    "main"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  gap: 2rem;
+  margin: auto;
+  padding: 2rem;
+  width: min(95vw, 1100px);
+  user-select: none;
+}
+
+/* Generic flexbox "grid" container*/
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+/* Flexbox container that centers children */
+.centered-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}

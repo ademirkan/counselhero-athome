@@ -1,0 +1,86 @@
+/* Grid container for entire layout: AlbumList, Nav, PhotoGrid */
+.container {
+  display: grid;
+  grid-template-areas:
+    "albums nav"
+    "albums photos";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+
+.albumList {
+  /* Content */
+  display: flex;
+  flex-direction: column;
+
+  /* Positioning */
+  grid-area: albums;
+  position: relative;
+
+  /* Sizing */
+  font-size: 14px;
+  line-height: 18px;
+  max-width: 200px;
+
+  /* Misc */
+  user-select: none;
+}
+
+.albumButton {
+  position: relative;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.43);
+  transition: background-color 150ms ease-in-out;
+}
+
+.albumButton:hover {
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+.buttonText {
+  color: black;
+  transition: color 200ms ease-in-out;
+}
+
+.buttonText:hover {
+  color: gray;
+}
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.photoGrid {
+  grid-area: photos;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 2rem;
+
+  /* Initial load animation */
+  animation-name: first-load;
+  animation-duration: 750ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes first-load {
+  /* 0% to 40% gives enough time for data to be fetched */
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
